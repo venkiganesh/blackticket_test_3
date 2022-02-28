@@ -1,0 +1,156 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+
+}
+body{
+  background-color: black;
+}
+.navbar{
+  margin: 0px;
+  width: 100%;
+  height: 4em;
+}
+.logo img{
+  position: absolute;
+  top:-2.8em;
+  left:2em;
+width: 150px;
+}
+#menu-icon{
+  position: absolute;
+  top:21px;
+  right:50px;
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+}
+#navbartoggle{
+  width: 300px;
+  height: 100vh;
+  position: absolute;
+  left:-15em;
+transition: right 1s;
+background-color: black;
+visibility: hidden;
+}
+@keyframes navopen {
+  0%{
+    visibility: hidden;
+    left:-15em;
+  }
+  100%{
+    visibility: visible;
+    left:0px;
+  }
+}
+@keyframes navclose {
+  0%{
+    visibility: visible;
+    left:0px;
+  }
+  100%{
+    visibility: hidden;
+    left:-15em;
+
+  }
+}
+
+.nav-items{
+  list-style: none;
+  position: absolute;
+  left:-30px;
+  top:80px;
+}
+.nav-items span{
+  color: white;
+  font-weight: bolder;
+position: absolute;
+  top: -60px;
+  font-size: 20px;
+}
+.nav-items li{
+  line-height: 70px;
+  margin-left: 10px;
+  color: white;
+  font-weight: bolder;
+  cursor: pointer;
+  transition: .2s;
+}
+.nav-items li:hover{
+  color: red;
+  transform: scale(1.1);
+}
+
+#close{
+  position: absolute;
+  top: -59px;
+  right:-170px;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+.img-container-2{
+  position: absolute;
+  width: 12.5em;
+  height: 58vh;
+  top:15em;
+  left:25em;
+}
+.img2{
+  width: 200px;
+position: absolute;
+top:0em;
+left:0em;
+z-index: -1;
+}
+.img-container-1{
+  position: absolute;
+  width: 12.5em;
+  height: 58vh;
+  top:15em;
+  left:5em;
+}
+
+.img1{
+  width: 200px;
+  height: 22em;
+position: absolute;
+top:0em;
+left:0em;
+z-index: -1;
+
+}
+.img-container-3{
+  position: absolute;
+  width: 12.5em;
+  height: 58vh;
+  top:15em;
+  right:5em;
+}
+
+.img3{
+  width: 200px;
+  height: 21.5em;
+position: absolute;
+top:0em;
+left:0em;
+z-index: -1;
+
+}
+
+.btn{
+  position: absolute;
+  top:23.3em;
+  left:0em;
+  width: 200px;
+  height: 2em;
+  background-color: red;
+  outline: none;
+  border: 0px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bolder;
+  z-index: -1;
+
+}
